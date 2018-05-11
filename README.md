@@ -1,12 +1,14 @@
 opengl
 ======
 
-learn Opengl
+# learn Opengl
 
 使用OpenGL的步骤：
-	1.设置vierport（视口）
-		glViewport(0,0,width, height);
-	2.操作投影矩阵，设置平截头体（比例通常和视口比例相同）	
+- 设置vierport（视口）
+	- glViewport(0,0,width, height);
+- 操作投影矩阵，设置平截头体（比例通常和视口比例相同）	
+
+``` c
 		// 矩阵模式：投影矩阵
 		glMatrixMode(GL_PROJECTION);
 		// 加载单位矩阵
@@ -22,6 +24,7 @@ learn Opengl
 		// gluLookAt( 摄像机x,摄像机y,摄像机z, 
 					  目标点x,目标点y,目标点z, 
                       摄像机顶朝向x,摄像机顶朝向y,摄像机顶朝向z)
+```
 	3.定义图形顶点坐标值数组
 	
 	绘制模式：
